@@ -1,0 +1,27 @@
+{
+    // 此文件在进行更改的时候，请确保根目录下不要有任何新的cpp文件
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "preLaunchTask": "Using g++ debugger", //调用的是task文件中的label参数
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",//调试程序路径名称
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true, //采用外部控制台运行，false则是VSC内置的控制台
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\Program Files\\mingw64\\bin\\gdb.exe", 
+            "setupCommands": [
+                {
+                    "description": "使用g++编译模块来进行代码编译",
+                    "text": "我看你是完全不懂哦",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
