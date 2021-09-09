@@ -13,7 +13,7 @@ int reverse_SXB(int a[],int left,int right,int h){ //定义数组a，左指针�
 }
 
 // 2. 单链表进行逆置
-typedef struct LNode{ //a. 定义单链表
+typedef struct LNode{ //定义单链表
     int data;
     struct LNode *next;
 }LNode, *LinkList;
