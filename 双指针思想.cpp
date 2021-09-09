@@ -6,7 +6,7 @@ typedef struct LNode{
     struct LNode *next;
 }LNode, *LinkList;
 
-//Part1 用一次遍历找到倒数第k个元素
+//Part 1--用一次遍历找到倒数第k个元素
 LinkList finddaoKnode(LinkList head,int k){
     //核心代码-start
     LNode *p=head, *q=head;
@@ -28,7 +28,7 @@ LinkList finddaoKnode(LinkList head,int k){
     return p;   //返回p所指向的结点
 }
 
-//Part2 一次遍历寻找到n/2位置上的结点
+//Part 2--一次遍历寻找到n/2位置上的结点
 LNode * findMidNode(LinkList head){
     LNode *p=head, *q=head;
     while(q->next!=NULL){
