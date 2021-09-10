@@ -8,7 +8,6 @@ typedef struct LNode{
 
 //Part 1--用一次遍历找到倒数第k个元素
 LinkList finddaoKnode(LinkList head,int k){
-    //核心代码-start
     LNode *p=head, *q=head;
     int count=0;  //设定辅助计数器
     bool go = false;      //定义go为假，目的为了让q先走k步后让p再走
@@ -20,7 +19,6 @@ LinkList finddaoKnode(LinkList head,int k){
         if(go)
             p = p->next;
     }
-    //核心代码-end
     if(p==head)
         printf("这个链表长度小于%d，并不存在倒数第k个结点\n", k);
     else
